@@ -10,16 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVVMRxDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignInViewController" customModule="MVVMRxDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1M4-eb-bDO">
-                                <rect key="frame" x="62.5" y="222" width="250" height="223"/>
+                                <rect key="frame" x="62.5" y="240" width="250" height="187"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P1w-eh-qn5">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="40"/>
@@ -45,14 +45,14 @@
                                         <rect key="frame" x="0.0" y="110" width="80" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="自动登录" image="unselect_signin">
-                                            <color key="titleColor" white="1" alpha="0.87" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.87" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6C-dG-VHk">
                                         <rect key="frame" x="203" y="110" width="47" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="设置" image="set_signin">
-                                            <color key="titleColor" white="1" alpha="0.87" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.87" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INf-yh-lq3">
@@ -71,7 +71,7 @@
                                     <constraint firstItem="TTL-eH-emH" firstAttribute="leading" secondItem="bsE-Wb-gYA" secondAttribute="leading" id="1ab-2B-1eO"/>
                                     <constraint firstItem="q6C-dG-VHk" firstAttribute="trailing" secondItem="bsE-Wb-gYA" secondAttribute="trailing" id="4br-Sp-i4X"/>
                                     <constraint firstItem="P1w-eh-qn5" firstAttribute="leading" secondItem="1M4-eb-bDO" secondAttribute="leading" id="4cn-fX-G6K"/>
-                                    <constraint firstAttribute="height" constant="223" id="5dS-Vv-3Nc"/>
+                                    <constraint firstAttribute="height" constant="187" id="5dS-Vv-3Nc"/>
                                     <constraint firstItem="q6C-dG-VHk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1M4-eb-bDO" secondAttribute="leading" constant="20" symbolic="YES" id="775-wI-yWh"/>
                                     <constraint firstItem="TTL-eH-emH" firstAttribute="top" secondItem="bsE-Wb-gYA" secondAttribute="bottom" constant="10" id="9fr-N5-7CQ"/>
                                     <constraint firstItem="bsE-Wb-gYA" firstAttribute="trailing" secondItem="P1w-eh-qn5" secondAttribute="trailing" id="Cz4-NO-O4M"/>
@@ -89,13 +89,20 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.094117647060000004" green="0.54117647059999996" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.12941176470588237" green="0.33725490196078434" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1M4-eb-bDO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Ui-co-D0x"/>
                             <constraint firstItem="1M4-eb-bDO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vkj-fy-3Mf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="autoOutlet" destination="TTL-eH-emH" id="RI4-br-iwa"/>
+                        <outlet property="passwordOutlet" destination="bsE-Wb-gYA" id="xOf-c5-gRc"/>
+                        <outlet property="settingOutlet" destination="q6C-dG-VHk" id="LPo-97-Ima"/>
+                        <outlet property="signInOutlet" destination="INf-yh-lq3" id="FRt-Ey-XeQ"/>
+                        <outlet property="usernameOutlet" destination="P1w-eh-qn5" id="QvM-yc-Cq3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

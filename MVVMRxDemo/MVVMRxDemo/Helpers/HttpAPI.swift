@@ -17,7 +17,7 @@ extension HttpAPI: TargetType {
     /// 接口基础的URL
     public var baseURL: URL { return URL(string: "https://myservice.com/")! }
     
-    /// 定义每个接口的路径
+    /// 定义每个接口的请求路径
     public var path: String {
         switch self {
         case .signin:

@@ -10,7 +10,6 @@
 		54E5B5E678381176E09778AF /* Pods_MVVMRxDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05522A3E401501E3AF6A875C /* Pods_MVVMRxDemoUITests.framework */; };
 		9083E76DC7C21C6A150D3D00 /* Pods_MVVMRxDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5733494191DB3C2982A374F /* Pods_MVVMRxDemo.framework */; };
 		AF4517F02089C6D900366FBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4517EF2089C6D900366FBD /* AppDelegate.swift */; };
-		AF4517F22089C6D900366FBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4517F12089C6D900366FBD /* ViewController.swift */; };
 		AF4517F52089C6D900366FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4517F32089C6D900366FBD /* Main.storyboard */; };
 		AF4517F72089C6DB00366FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4517F62089C6DB00366FBD /* Assets.xcassets */; };
 		AF4517FA2089C6DB00366FBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4517F82089C6DB00366FBD /* LaunchScreen.storyboard */; };
@@ -27,6 +26,9 @@
 		AF4518402089D4B100366FBD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF45183F2089D4B100366FBD /* Result.swift */; };
 		AF4518422089D51200366FBD /* HttpAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4518412089D51200366FBD /* HttpAPI.swift */; };
 		AF4518442089D92300366FBD /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4518432089D92300366FBD /* Logger.swift */; };
+		AF4518462089E24400366FBD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4518452089E24400366FBD /* SignInViewController.swift */; };
+		AF4518482089E35500366FBD /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4518472089E35500366FBD /* UIImage+Extension.swift */; };
+		AF45184A2089EA9600366FBD /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4518492089EA9600366FBD /* UserInfo.swift */; };
 		C766D2CF66091F7282C60186 /* Pods_MVVMRxDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD4343D0CE9BDB6B14C80A3 /* Pods_MVVMRxDemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +56,6 @@
 		4AF480064FEE40C4CEA16C20 /* Pods-MVVMRxDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMRxDemoTests/Pods-MVVMRxDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF4517EC2089C6D900366FBD /* MVVMRxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMRxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4517EF2089C6D900366FBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF4517F12089C6D900366FBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF4517F42089C6D900366FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF4517F62089C6DB00366FBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF4517F92089C6DB00366FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +77,9 @@
 		AF45183F2089D4B100366FBD /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		AF4518412089D51200366FBD /* HttpAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpAPI.swift; sourceTree = "<group>"; };
 		AF4518432089D92300366FBD /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		AF4518452089E24400366FBD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		AF4518472089E35500366FBD /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		AF4518492089EA9600366FBD /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		B28015169E3616A8A7E25280 /* Pods-MVVMRxDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMRxDemoUITests/Pods-MVVMRxDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B5B0D7FCF33E19A82E4897C3 /* Pods-MVVMRxDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMRxDemo/Pods-MVVMRxDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D38641A39DF574D66A421587 /* Pods-MVVMRxDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMRxDemoTests/Pods-MVVMRxDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -202,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				AF4518202089D09800366FBD /* Extensions.md */,
+				AF4518472089E35500366FBD /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 		AF4518242089D09800366FBD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AF4518492089EA9600366FBD /* UserInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,6 +257,7 @@
 		AF4518262089D09800366FBD /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				AF4518452089E24400366FBD /* SignInViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -335,7 +342,6 @@
 			isa = PBXGroup;
 			children = (
 				AF4517EF2089C6D900366FBD /* AppDelegate.swift */,
-				AF4517F12089C6D900366FBD /* ViewController.swift */,
 				AF4517F32089C6D900366FBD /* Main.storyboard */,
 				AF4517F82089C6DB00366FBD /* LaunchScreen.storyboard */,
 			);
@@ -577,11 +583,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF4518422089D51200366FBD /* HttpAPI.swift in Sources */,
-				AF4517F22089C6D900366FBD /* ViewController.swift in Sources */,
 				AF4518402089D4B100366FBD /* Result.swift in Sources */,
 				AF4517F02089C6D900366FBD /* AppDelegate.swift in Sources */,
+				AF4518482089E35500366FBD /* UIImage+Extension.swift in Sources */,
+				AF4518462089E24400366FBD /* SignInViewController.swift in Sources */,
 				AF4518442089D92300366FBD /* Logger.swift in Sources */,
 				AF45183C2089D3ED00366FBD /* BaseViewController.swift in Sources */,
+				AF45184A2089EA9600366FBD /* UserInfo.swift in Sources */,
 				AF45183E2089D45A00366FBD /* BaseResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
