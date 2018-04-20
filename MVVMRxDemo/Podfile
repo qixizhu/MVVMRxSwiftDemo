@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'MVVMRxDemo' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MVVMRxDemo
+    pod 'Moya/RxSwift'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'ObjectMapper'
+    pod 'SVProgressHUD'
+    pod 'MJRefresh'
+    pod 'SwiftyBeaver'
+    pod 'CryptoSwift'
+
+  target 'MVVMRxDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MVVMRxDemoUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
