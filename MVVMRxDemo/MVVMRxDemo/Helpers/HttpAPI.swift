@@ -10,24 +10,32 @@ import Moya
 
 public enum HttpAPI {
     case signin(username: String, password: String)
+    case test(postId: Int)
 }
 
 // MARK: - TargetType Protocol Implementation
 extension HttpAPI: TargetType {
     /// 接口基础的URL
-    public var baseURL: URL { return URL(string: "https://myservice.com/")! }
+    public var baseURL: URL { return URL(string: "http://jsonplaceholder.typicode.com/")! }
     
     /// 定义每个接口的请求路径
     public var path: String {
         switch self {
         case .signin:
             return "SignIn"
+        case .test:
+            return "comments"
         }
     }
     
     /// 定义每个接口的 http 请求方式
     public var method: Moya.Method {
-        return .post
+        switch self {
+        case .signin:
+            return .post
+        case .test:
+            return .get
+        }
     }
     
     /// 定义每个接口的 test 数据：与 test 有关
@@ -41,6 +49,11 @@ extension HttpAPI: TargetType {
                 parameters: ["loginName" : username, "loginPwd" : password],
                 encoding: JSONEncoding.default
             )
+        case let .test(postId):
+            return .requestParameters(
+                parameters: ["postId" : postId],
+                encoding: URLEncoding.default
+            )
         }
     }
     
@@ -49,6 +62,6 @@ extension HttpAPI: TargetType {
     
     /// 定义每个接口的请求头
     public var headers: [String : String]? {
-        return ["Content-type": "application/json"]
+        return nil
     }
 }

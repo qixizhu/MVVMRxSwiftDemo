@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		54E5B5E678381176E09778AF /* Pods_MVVMRxDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05522A3E401501E3AF6A875C /* Pods_MVVMRxDemoUITests.framework */; };
 		9083E76DC7C21C6A150D3D00 /* Pods_MVVMRxDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5733494191DB3C2982A374F /* Pods_MVVMRxDemo.framework */; };
+		AF373FC4208D6F5C00E2741D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF373FC3208D6F5C00E2741D /* ActivityIndicator.swift */; };
+		AF373FC6208D76EB00E2741D /* MoyaProvider+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF373FC5208D76EB00E2741D /* MoyaProvider+Extension.swift */; };
+		AF373FC8208D773A00E2741D /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF373FC7208D773A00E2741D /* SignInViewModel.swift */; };
+		AF373FCA208D779000E2741D /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF373FC9208D779000E2741D /* UserDefaultsHelper.swift */; };
+		AF373FCC208D7BEA00E2741D /* RxSwift+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF373FCB208D7BEA00E2741D /* RxSwift+Extension.swift */; };
+		AF373FCE208D7C2300E2741D /* SVProgressHUD+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF373FCD208D7C2300E2741D /* SVProgressHUD+Extension.swift */; };
+		AF373FD0208D804900E2741D /* MyTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF373FCF208D804900E2741D /* MyTestModel.swift */; };
 		AF4517F02089C6D900366FBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4517EF2089C6D900366FBD /* AppDelegate.swift */; };
 		AF4517F52089C6D900366FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4517F32089C6D900366FBD /* Main.storyboard */; };
 		AF4517F72089C6DB00366FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4517F62089C6DB00366FBD /* Assets.xcassets */; };
@@ -54,6 +61,13 @@
 		3BD4343D0CE9BDB6B14C80A3 /* Pods_MVVMRxDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMRxDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		492BE12A98E6E8984F79410B /* Pods-MVVMRxDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMRxDemoUITests/Pods-MVVMRxDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4AF480064FEE40C4CEA16C20 /* Pods-MVVMRxDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMRxDemoTests/Pods-MVVMRxDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF373FC3208D6F5C00E2741D /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		AF373FC5208D76EB00E2741D /* MoyaProvider+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Extension.swift"; sourceTree = "<group>"; };
+		AF373FC7208D773A00E2741D /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		AF373FC9208D779000E2741D /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		AF373FCB208D7BEA00E2741D /* RxSwift+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSwift+Extension.swift"; sourceTree = "<group>"; };
+		AF373FCD208D7C2300E2741D /* SVProgressHUD+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SVProgressHUD+Extension.swift"; sourceTree = "<group>"; };
+		AF373FCF208D804900E2741D /* MyTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTestModel.swift; sourceTree = "<group>"; };
 		AF4517EC2089C6D900366FBD /* MVVMRxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMRxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4517EF2089C6D900366FBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF4517F42089C6D900366FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -207,6 +221,9 @@
 			children = (
 				AF4518202089D09800366FBD /* Extensions.md */,
 				AF4518472089E35500366FBD /* UIImage+Extension.swift */,
+				AF373FC5208D76EB00E2741D /* MoyaProvider+Extension.swift */,
+				AF373FCB208D7BEA00E2741D /* RxSwift+Extension.swift */,
+				AF373FCD208D7C2300E2741D /* SVProgressHUD+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -235,6 +252,7 @@
 		AF4518232089D09800366FBD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AF373FC7208D773A00E2741D /* SignInViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -285,6 +303,7 @@
 			children = (
 				AF45183D2089D45A00366FBD /* BaseResponse.swift */,
 				AF45183F2089D4B100366FBD /* Result.swift */,
+				AF373FCF208D804900E2741D /* MyTestModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -307,8 +326,10 @@
 		AF45182D2089D09800366FBD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				AF373FC3208D6F5C00E2741D /* ActivityIndicator.swift */,
 				AF45182E2089D09800366FBD /* Helpers.md */,
 				AF4518412089D51200366FBD /* HttpAPI.swift */,
+				AF373FC9208D779000E2741D /* UserDefaultsHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -582,12 +603,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF373FC6208D76EB00E2741D /* MoyaProvider+Extension.swift in Sources */,
+				AF373FCA208D779000E2741D /* UserDefaultsHelper.swift in Sources */,
 				AF4518422089D51200366FBD /* HttpAPI.swift in Sources */,
+				AF373FD0208D804900E2741D /* MyTestModel.swift in Sources */,
+				AF373FCE208D7C2300E2741D /* SVProgressHUD+Extension.swift in Sources */,
 				AF4518402089D4B100366FBD /* Result.swift in Sources */,
 				AF4517F02089C6D900366FBD /* AppDelegate.swift in Sources */,
+				AF373FCC208D7BEA00E2741D /* RxSwift+Extension.swift in Sources */,
 				AF4518482089E35500366FBD /* UIImage+Extension.swift in Sources */,
 				AF4518462089E24400366FBD /* SignInViewController.swift in Sources */,
 				AF4518442089D92300366FBD /* Logger.swift in Sources */,
+				AF373FC4208D6F5C00E2741D /* ActivityIndicator.swift in Sources */,
+				AF373FC8208D773A00E2741D /* SignInViewModel.swift in Sources */,
 				AF45183C2089D3ED00366FBD /* BaseViewController.swift in Sources */,
 				AF45184A2089EA9600366FBD /* UserInfo.swift in Sources */,
 				AF45183E2089D45A00366FBD /* BaseResponse.swift in Sources */,
@@ -765,6 +793,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MWQ63499X2;
 				INFOPLIST_FILE = MVVMRxDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -783,6 +812,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MWQ63499X2;
 				INFOPLIST_FILE = MVVMRxDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

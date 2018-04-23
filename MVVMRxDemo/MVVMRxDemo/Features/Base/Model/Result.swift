@@ -8,7 +8,7 @@
 
 import ObjectMapper
 
-public enum Result<T: Mappable> {
+public enum Result<T> {
     case success(T)
     case failure(Swift.Error)
     
