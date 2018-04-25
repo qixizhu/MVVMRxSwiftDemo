@@ -16,6 +16,7 @@
 		AF373FCC208D7BEA00E2741D /* RxSwift+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF373FCB208D7BEA00E2741D /* RxSwift+Extension.swift */; };
 		AF373FCE208D7C2300E2741D /* SVProgressHUD+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF373FCD208D7C2300E2741D /* SVProgressHUD+Extension.swift */; };
 		AF373FD0208D804900E2741D /* MyTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF373FCF208D804900E2741D /* MyTestModel.swift */; };
+		AF373FD2208DC32200E2741D /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF373FD1208DC32200E2741D /* HttpService.swift */; };
 		AF4517F02089C6D900366FBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4517EF2089C6D900366FBD /* AppDelegate.swift */; };
 		AF4517F52089C6D900366FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4517F32089C6D900366FBD /* Main.storyboard */; };
 		AF4517F72089C6DB00366FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4517F62089C6DB00366FBD /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		AF373FCB208D7BEA00E2741D /* RxSwift+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSwift+Extension.swift"; sourceTree = "<group>"; };
 		AF373FCD208D7C2300E2741D /* SVProgressHUD+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SVProgressHUD+Extension.swift"; sourceTree = "<group>"; };
 		AF373FCF208D804900E2741D /* MyTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTestModel.swift; sourceTree = "<group>"; };
+		AF373FD1208DC32200E2741D /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
 		AF4517EC2089C6D900366FBD /* MVVMRxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMRxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4517EF2089C6D900366FBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF4517F42089C6D900366FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -330,6 +332,7 @@
 				AF45182E2089D09800366FBD /* Helpers.md */,
 				AF4518412089D51200366FBD /* HttpAPI.swift */,
 				AF373FC9208D779000E2741D /* UserDefaultsHelper.swift */,
+				AF373FD1208DC32200E2741D /* HttpService.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -611,6 +614,7 @@
 				AF4518402089D4B100366FBD /* Result.swift in Sources */,
 				AF4517F02089C6D900366FBD /* AppDelegate.swift in Sources */,
 				AF373FCC208D7BEA00E2741D /* RxSwift+Extension.swift in Sources */,
+				AF373FD2208DC32200E2741D /* HttpService.swift in Sources */,
 				AF4518482089E35500366FBD /* UIImage+Extension.swift in Sources */,
 				AF4518462089E24400366FBD /* SignInViewController.swift in Sources */,
 				AF4518442089D92300366FBD /* Logger.swift in Sources */,

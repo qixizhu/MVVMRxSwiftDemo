@@ -69,11 +69,11 @@ class SignInViewController: BaseViewController {
             .subscribe(onNext: { (result) in
                 // TODO: - show success message
                 switch result {
-                case .success(let object):
+                case .value(let object):
                     log.debug(object.code)
                     log.debug("success")
                     SVProgressHUD.showSuccess(with: "登录成功")
-                case .failure(let error):
+                case .error(let error):
                     log.error(error.localizedDescription)
                     log.debug("failura")
                     SVProgressHUD.showError(with: error.localizedDescription)

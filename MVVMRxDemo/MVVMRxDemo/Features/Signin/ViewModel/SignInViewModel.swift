@@ -25,7 +25,7 @@ class SignInViewModel {
     let isAutoSignin = BehaviorRelay<Bool>(value: UserDefaultsHelper.shared.isAutoLogin)
     
     /// 登录结果
-    let signedIn: Observable<Result<BaseResponse>>
+    let signedIn: Observable<Result<SignInResponse>>
     
     init(
         input: (
@@ -56,17 +56,7 @@ class SignInViewModel {
         
         signedIn = Observable.merge(input.loginTaps, input.goReturnKyeTaps).withLatestFrom(usernameAndPassword)
             .flatMapLatest { pair in
-                return provider.rx
-                    .request(
-                        .signin(username: pair.username, password: pair.password.md5()),
-                        mapper: Mapper<BaseResponse>()
-                    )
-                    // 因为要监控 error，且如果不处理 error 事件，那么 request 的请求链在发生
-                    // error 事件后，将不会再次执行，即点击 登录 按钮，不会再次请求网络
-                    // 这是 RxSwift 事件流的特性，所以这里必须要处理发生错误返回
-                    .catchError({ (error) -> PrimitiveSequence<SingleTrait, Result<BaseResponse>> in
-                        return Single.just(Result.failure(error))
-                    })
+                return HttpService.shared.signIn(username: pair.username, password: pair.password.md5())
                     // 用户监控网络请求，ActivityIndicator.swift
                     .trackActivity(signingIn)
             }

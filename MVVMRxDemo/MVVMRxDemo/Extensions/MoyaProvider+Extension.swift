@@ -26,7 +26,7 @@ public extension Reactive where Base: MoyaProviderType {
                     do {
                         let josnString = try response.mapString()
                         if let object = mapper.map(JSONString: josnString) {
-                            single(.success(Result.success(object)))
+                            single(.success(Result.value(object)))
                         } else {
                             single(.error(MoyaError.stringMapping(response)))
                         }
@@ -52,7 +52,7 @@ public extension Reactive where Base: MoyaProviderType {
                     do {
                         let josnString = try response.mapString()
                         if let array = mapper.mapArray(JSONString: josnString) {
-                            single(.success(Result.success(array)))
+                            single(.success(Result.value(array)))
                         } else {
                             single(.error(MoyaError.stringMapping(response)))
                         }
