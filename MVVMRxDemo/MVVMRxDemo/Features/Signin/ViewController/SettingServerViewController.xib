@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingServerViewController" customModule="RemoteConference" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingServerViewController" customModule="MVVMRxDemo" customModuleProvider="target">
             <connections>
                 <outlet property="cancelButton" destination="MDJ-yq-gFe" id="iMV-g6-GXM"/>
                 <outlet property="confirmButton" destination="QZb-qZ-fGr" id="sQc-XX-UXo"/>
@@ -25,7 +25,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJs-x5-F0m">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJs-x5-F0m">
                     <rect key="frame" x="50" y="244.5" width="275" height="178"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7I-zo-xjZ">
