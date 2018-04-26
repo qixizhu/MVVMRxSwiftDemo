@@ -109,7 +109,9 @@ class SignInViewController: BaseViewController {
         /// 设置按钮点击事件
         settingOutlet.rx.tap
             .subscribe(onNext: { _ in
-                // TODO: - show setting alert
+                let vc = SettingServerViewController()
+                vc.modalPresentationStyle = .overCurrentContext
+                self.present(vc, animated: true, completion: nil)
             }).disposed(by: bag)
         
         // 点击视图其它区域隐藏键盘

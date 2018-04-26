@@ -37,6 +37,8 @@
 		AF4518462089E24400366FBD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4518452089E24400366FBD /* SignInViewController.swift */; };
 		AF4518482089E35500366FBD /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4518472089E35500366FBD /* UIImage+Extension.swift */; };
 		AF45184A2089EA9600366FBD /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4518492089EA9600366FBD /* UserInfo.swift */; };
+		AFEDD7802091BE6C00F0DD5C /* SettingServerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFEDD77E2091BE6B00F0DD5C /* SettingServerViewController.xib */; };
+		AFEDD7812091BE6C00F0DD5C /* SettingServerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEDD77F2091BE6B00F0DD5C /* SettingServerViewController.swift */; };
 		C766D2CF66091F7282C60186 /* Pods_MVVMRxDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD4343D0CE9BDB6B14C80A3 /* Pods_MVVMRxDemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +98,8 @@
 		AF4518452089E24400366FBD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		AF4518472089E35500366FBD /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		AF4518492089EA9600366FBD /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		AFEDD77E2091BE6B00F0DD5C /* SettingServerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingServerViewController.xib; sourceTree = "<group>"; };
+		AFEDD77F2091BE6B00F0DD5C /* SettingServerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingServerViewController.swift; sourceTree = "<group>"; };
 		B28015169E3616A8A7E25280 /* Pods-MVVMRxDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMRxDemoUITests/Pods-MVVMRxDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B5B0D7FCF33E19A82E4897C3 /* Pods-MVVMRxDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMRxDemo/Pods-MVVMRxDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D38641A39DF574D66A421587 /* Pods-MVVMRxDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMRxDemoTests/Pods-MVVMRxDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -277,6 +281,8 @@
 		AF4518262089D09800366FBD /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				AFEDD77F2091BE6B00F0DD5C /* SettingServerViewController.swift */,
+				AFEDD77E2091BE6B00F0DD5C /* SettingServerViewController.xib */,
 				AF4518452089E24400366FBD /* SignInViewController.swift */,
 			);
 			path = ViewController;
@@ -488,6 +494,7 @@
 				AF4518372089D09900366FBD /* Helpers.md in Resources */,
 				AF4518342089D09900366FBD /* Vendors.md in Resources */,
 				AF4517F52089C6D900366FBD /* Main.storyboard in Resources */,
+				AFEDD7802091BE6C00F0DD5C /* SettingServerViewController.xib in Resources */,
 				AF4518382089D09900366FBD /* Utilities.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,6 +613,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFEDD7812091BE6C00F0DD5C /* SettingServerViewController.swift in Sources */,
 				AF373FC6208D76EB00E2741D /* MoyaProvider+Extension.swift in Sources */,
 				AF373FCA208D779000E2741D /* UserDefaultsHelper.swift in Sources */,
 				AF4518422089D51200366FBD /* HttpAPI.swift in Sources */,
